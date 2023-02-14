@@ -6,10 +6,10 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.84.0">
-        <title>Dashboard Template · Bootstrap v5.0</title>
+        <title>Автомобильный лист-@yield('title')</title>
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/mycss/bootstrap.css" />
+        <link rel="stylesheet" href="{{ url('css/mycss/bootstrap.css') }}" />
         <style>
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -26,8 +26,7 @@
             }
         </style>
         <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="css/mycss/dashboard.css" />
-
+        <link rel="stylesheet" href="{{ url('css/mycss/dashboard.css') }}" />
     </head>
     <body>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
@@ -49,13 +48,13 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a id="nav-link_mainMenu" class="nav-link" aria-current="page" href="{{ route('avtoList.index') }}">
                                 <span data-feather="home"></span>
                                 Список листов
                             </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a id="nav-link_create" class="nav-link" href="{{ route('avtoList.create') }}">
                             <span data-feather="file"></span>
                             Создать новый лист
                           </a>
@@ -71,6 +70,8 @@
                     </ul>
                 </div>
             </nav>
+            @yield('content')
+            <!--
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
@@ -122,9 +123,10 @@
                         </tbody>
                     </table>
                 </div>
-            </main>
+            </main>-->
+
         </div>
     </div>
-    <script src="js/bootstrap.js"></script>
+    <script src="{{ url('js/bootstrap.js') }}"></script>
     </body>
 </html>

@@ -14,7 +14,7 @@ class DashbordAvtoListController extends Controller
      */
     public function index()
     {
-        //
+        return view('main_menu.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class DashbordAvtoListController extends Controller
      */
     public function create()
     {
-        //
+        return view('main_menu.create');
     }
 
     /**
