@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\ListControler;
 
 use App\Http\Controllers\Controller;
+use App\Models\dashbord_list;
 use Illuminate\Http\Request;
 
 class DashbordAvtoListController extends Controller
@@ -35,7 +36,16 @@ class DashbordAvtoListController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $new_avtoList = new dashbord_list();
+
+        $new_avtoList -> number = $request ->number;
+        $new_avtoList -> type_avto = $request ->type_avto;
+        $new_avtoList -> seson_year = $request ->seson_year;
+
+
+        $new_avtoList -> save();
+
+        return redirect()->back()->withSuccess('Запись добаленна');
     }
 
     /**

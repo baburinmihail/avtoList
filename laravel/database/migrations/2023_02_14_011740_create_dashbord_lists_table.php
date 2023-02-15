@@ -18,7 +18,6 @@ return new class extends Migration
             $table->integer('number') -> unsigned();
             $table->string('type_avto');
             $table->string('seson_year');
-            $table->time('data');
             $table->timestamps();
         });
     }
