@@ -11,46 +11,21 @@
                     <th scope="col">Номер</th>
                     <th scope="col">Макрка авто</th>
                     <th scope="col">Сезон</th>
-                    <th scope="col">Дата</th>
+                    <th scope="col"></th>
                     <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>УАЗик</td>
-                    <td>Лето</td>
-                    <td>13.02.21</td>
-                    <td>редактировать</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>УАЗик</td>
-                    <td>Лето</td>
-                    <td>14.02.21</td>
-                    <td>редактировать</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>УАЗик</td>
-                    <td>Лето</td>
-                    <td>15.02.21</td>
-                    <td>редактировать</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>УАЗик</td>
-                    <td>Лето</td>
-                    <td>16.02.21</td>
-                    <td>редактировать</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>УАЗик</td>
-                    <td>Лето</td>
-                    <td>17.02.21</td>
-                    <td>редактировать</td>
-                </tr>
+                @foreach($avtoList as $value)
+                    <tr>
+                        <td>{{ $value['number'] }}</td>
+                        <td>{{ $value['type_avto'] }}</td>
+                        <td>{{ $value['seson_year'] }}</td>
+                        <td>редактировать</td>
+                        <td>удалить</td>
+                    </tr>
+                @endforeach
+
                 </tbody>
             </table>
         </div>

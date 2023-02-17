@@ -15,7 +15,13 @@ class DashbordAvtoListController extends Controller
      */
     public function index()
     {
-        return view('main_menu.index');
+        /**передаю модель в переменнную*/
+        $avtoList = dashbord_list::orderBy('created_at','desc')->get();
+
+        /**передаю перменную в шаблон*/
+        return view('main_menu.index',[
+            'avtoList' => $avtoList
+        ]);
     }
 
     /**
