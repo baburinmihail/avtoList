@@ -7,6 +7,7 @@
     <list default="true" id="234d4b1d-162f-4854-9cbc-e9ff777a198b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/ListControler/DashbordAvtoListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/ListControler/DashbordAvtoListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/main_menu/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/main_menu/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/main_menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/main_menu/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +176,8 @@
       <workItem from="1676439268233" duration="4574000" />
       <workItem from="1676446591103" duration="3541000" />
       <workItem from="1676543746172" duration="63000" />
-      <workItem from="1676607473724" duration="1841000" />
+      <workItem from="1676607473724" duration="7175000" />
+      <workItem from="1676626431434" duration="63000" />
     </task>
     <servers />
   </component>

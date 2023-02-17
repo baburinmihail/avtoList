@@ -9,7 +9,7 @@
                 <thead>
                 <tr>
                     <th scope="col">Номер</th>
-                    <th scope="col">Макрка авто</th>
+                    <th scope="col">Марка авто</th>
                     <th scope="col">Сезон</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -21,11 +21,10 @@
                         <td>{{ $value['number'] }}</td>
                         <td>{{ $value['type_avto'] }}</td>
                         <td>{{ $value['seson_year'] }}</td>
-                        <td>редактировать</td>
+                        <td><a href="{{ route('avtoList.edit', $value['id'] ) }}">редактировать</a></td>
                         <td>удалить</td>
                     </tr>
                 @endforeach
-
                 </tbody>
             </table>
         </div>

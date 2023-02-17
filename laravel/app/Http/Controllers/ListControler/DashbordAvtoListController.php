@@ -71,21 +71,24 @@ class DashbordAvtoListController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(dashbord_list $avtoList , $id)
     {
-        //
+        return view('main_menu.edit',[
+            'avtoList' => $avtoList::find($id)
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
+     * @param \App\Models\dashbord_list $avtoList
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(dashbord_list $avtoList)
     {
-        //
+
     }
 
     /**
