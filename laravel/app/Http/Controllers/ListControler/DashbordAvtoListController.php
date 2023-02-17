@@ -71,10 +71,10 @@ class DashbordAvtoListController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(dashbord_list $avtoList , $id)
+    public function edit(dashbord_list $avtoList)
     {
         return view('main_menu.edit',[
-            'avtoList' => $avtoList::find($id)
+            'avtoList' => $avtoList
         ]);
     }
 
@@ -86,8 +86,16 @@ class DashbordAvtoListController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(dashbord_list $avtoList)
+    public function update(Request $request, dashbord_list $avtoList)
     {
+        $avtoList -> number = $request ->number;
+        $avtoList -> type_avto = $request ->type_avto;
+        $avtoList -> seson_year = $request ->seson_year;
+
+        $avtoList -> save();
+
+        return redirect()->back()->withSuccess('Запись обновленна');
+
 
     }
 
@@ -97,8 +105,10 @@ class DashbordAvtoListController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(dashbord_list $avtoList)
     {
-        //
+        $avtoList -> delete();
+
+        return redirect()->back()->withSuccess('Запись удалена');
     }
 }

@@ -16,13 +16,22 @@
                 </tr>
                 </thead>
                 <tbody>
+                @if (session('success'))
+                    <h4>{{session('success')}}</h4>
+                @endif
                 @foreach($avtoList as $value)
                     <tr>
                         <td>{{ $value['number'] }}</td>
                         <td>{{ $value['type_avto'] }}</td>
                         <td>{{ $value['seson_year'] }}</td>
                         <td><a href="{{ route('avtoList.edit', $value['id'] ) }}">редактировать</a></td>
-                        <td>удалить</td>
+                        <td>
+                            <form action="{{ route( 'avtoList.destroy', $value['id'] ) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="delete-btn" href="">удалить</button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>

@@ -11,7 +11,7 @@
             @csrf
             @method('PUT')
             <div class="row mb-2">
-                <div class="col-md-12">Редактирование листа № {{ $avtoList['number'] }}$avtoList['number'] </div>
+                <div class="col-md-12">Редактирование листа № {{ $avtoList['number'] }} </div>
                 <div class="col-md-8">
                     Номер
                 </div>
