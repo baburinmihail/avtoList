@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="234d4b1d-162f-4854-9cbc-e9ff777a198b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/ListControler/DashbordAvtoListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/ListControler/DashbordAvtoListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/main_menu/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/main_menu/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/css/mycss/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/css/mycss/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/css/mycss/form-validation.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/css/mycss/form-validation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/dashbord_avtolist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/dashbord_avtolist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/main_menu/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/main_menu/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/main_menu/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/main_menu/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +181,13 @@
       <workItem from="1676607473724" duration="7175000" />
       <workItem from="1676626431434" duration="63000" />
       <workItem from="1676626546438" duration="105000" />
-      <workItem from="1676631471079" duration="2561000" />
+      <workItem from="1676631471079" duration="4194000" />
+      <workItem from="1676863793688" duration="304000" />
+      <workItem from="1676864196537" duration="12388000" />
+      <workItem from="1676950248781" duration="2058000" />
+      <workItem from="1676961922387" duration="3639000" />
+      <workItem from="1678087708977" duration="1613000" />
+      <workItem from="1678342606214" duration="6138000" />
     </task>
     <servers />
   </component>

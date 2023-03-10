@@ -24,6 +24,11 @@
                     font-size: 3.5rem;
                 }
             }
+
+            .botstrape_class{
+                font-family: "Times New Roman";
+                text-align: center;
+            }
         </style>
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="{{ url('css/mycss/dashboard.css') }}" />

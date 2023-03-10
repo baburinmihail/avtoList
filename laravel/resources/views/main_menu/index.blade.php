@@ -13,6 +13,7 @@
                     <th scope="col">Сезон</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
+                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,6 +26,7 @@
                         <td>{{ $value['type_avto'] }}</td>
                         <td>{{ $value['seson_year'] }}</td>
                         <td><a href="{{ route('avtoList.edit', $value['id'] ) }}">редактировать</a></td>
+                        <td><a href="{{ route('avtoList.edit', $value['id'] ) }}">печать</a></td>
                         <td>
                             <form action="{{ route( 'avtoList.destroy', $value['id'] ) }}" method="POST">
                                 @csrf
